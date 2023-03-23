@@ -1,6 +1,7 @@
 {
   "name": "root",
   "private": true,
+  "module": "Commmonjs",
   "workspaces": [
     "packages/*"
   ],
@@ -10,10 +11,14 @@
     "lerna": "^6.5.1"
   },
   "dependencies": {
+    "eslint": "^8.36.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.6",
     "verdaccio": "^6.0.0-6-next.67"
   },
   "scripts": {
     "test": "jest",
-    "test2": "npx jest --watch"
+    "test2": "npx jest --watch",
+    "lint": "eslint --ext .js packages/**/*.js --no-error-on-unmatched-pattern --fix"
   }
 }

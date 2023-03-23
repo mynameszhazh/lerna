@@ -1,7 +1,9 @@
-'use strict';
+'use strict'
 
-const xjhLerna = require('..');
-const assert = require('assert').strict;
+const xjhLerna = require('..')
 
-assert.strictEqual(xjhLerna(), 'Hello from xjhLerna');
-console.info('xjhLerna tests passed');
+describe('@lerna/xjh-lerna', () => {
+  it('test xjh-lerna', () => {
+    expect(xjhLerna()).toBe('xjhLerna')
+  })
+})

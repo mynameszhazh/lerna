@@ -1,7 +1,9 @@
-'use strict';
+'use strict'
 
-const add = require('..');
-const assert = require('assert').strict;
+const add = require('..')
 
-assert.strictEqual(add(), 'Hello from add');
-console.info('add tests passed');
+describe('@lerna/xjh-lerna', () => {
+  it('test xjh-lerna', () => {
+    expect(add()).toBe('add')
+  })
+})

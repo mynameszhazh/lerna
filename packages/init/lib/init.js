@@ -3,5 +3,5 @@
 module.exports = init;
 
 function init() {
-  return 'Hello from init';
+  return 'init';
 }

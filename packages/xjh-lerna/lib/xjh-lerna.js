@@ -3,5 +3,5 @@
 module.exports = xjhLerna;
 
 function xjhLerna() {
-  return 'Hello from xjhLerna';
+  return 'xjhLerna';
 }

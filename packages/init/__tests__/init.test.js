@@ -1,5 +1,5 @@
 'use strict'
-
+const { describe, expect, test } = require('@jest/globals')
 const init = require('..')
 
 describe('@lerna/init', () => {

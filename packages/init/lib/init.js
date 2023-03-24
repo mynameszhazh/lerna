@@ -17,21 +17,29 @@ class InitCommand {
   }
   async ensurePackageJSON() {
     console.info('创建package.json')
-    await fs.writeJSON(path.join(this.rootPath, 'package.json'), {
-      name: 'root',
-      private: true,
-      devDependencies: {
-        lerna: '^4.0.0'
-      }
-    })
+    await fs.writeJSON(
+      path.join(this.rootPath, 'package.json'),
+      {
+        name: 'root',
+        private: true,
+        devDependencies: {
+          lerna: '^4.0.0'
+        }
+      },
+      { spaces: 2 }
+    )
   }
   async ensureLernaConfig() {
     console.info('创建lerna.json')
-    await fs.writeJSON(path.join(this.rootPath, 'lerna.json'), {
-      $schema: 'node_modules/lerna/schemas/lerna-schema.json',
-      useWorkspaces: true,
-      version: '0.0.0'
-    })
+    await fs.writeJSON(
+      path.join(this.rootPath, 'lerna.json'),
+      {
+        $schema: 'node_modules/lerna/schemas/lerna-schema.json',
+        useWorkspaces: true,
+        version: '0.0.0'
+      },
+      { spaces: 2 }
+    )
   }
   async ensurePackagesDir() {
     console.info('创建package.json')

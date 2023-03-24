@@ -25,5 +25,13 @@
   },
   "bugs": {
     "url": "https://github.com/mynameszhazh/lerna/issues"
+  },
+  "bin": {
+    "xjh-lerna": "cli.js"
+  },
+  "dependencies": {
+    "@xjh-lerna/cli": "^0.0.0",
+    "@xjh-lerna/init": "^0.0.0",
+    "@xjh-lerna/create": "^0.0.0"
   }
 }

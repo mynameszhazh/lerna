@@ -1,8 +1,8 @@
-module.exports = init;
+module.exports = init
 
 function init() {
-  return 'init';
+  return
 }
-var a = 0;
+var a = 0
 
-console.log(a);
+console.log(a)

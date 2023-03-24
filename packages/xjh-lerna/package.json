@@ -1,6 +1,6 @@
 {
   "name": "xjh-lerna",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "> TODO: description",
   "author": "徐建辉 <1594776259@qq.com>",
   "homepage": "https://github.com/mynameszhazh/lerna#readme",
@@ -30,8 +30,8 @@
     "xjh-lerna": "cli.js"
   },
   "dependencies": {
-    "@xjh-lerna/cli": "^0.0.0",
-    "@xjh-lerna/init": "^0.0.0",
-    "@xjh-lerna/create": "^0.0.0"
+    "@xjh-lerna/cli": "^0.0.1",
+    "@xjh-lerna/create": "^0.0.1",
+    "@xjh-lerna/init": "^0.0.1"
   }
 }

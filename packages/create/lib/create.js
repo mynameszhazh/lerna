@@ -18,6 +18,7 @@ class CreateCommand {
     await fs.mkdirp(this.libDir)
     await fs.mkdirp(this.testDir)
     await initPackageJson(this.targetDir, '')
+    console.log('新包创建成功')
   }
 }
 

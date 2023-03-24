@@ -6,4 +6,5 @@ exports.builder = (yargs) => {
 
 exports.handler = (argv) => {
   console.log('执行init命令', argv)
+  return require('.')(argv)
 }
